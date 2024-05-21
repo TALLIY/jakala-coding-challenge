@@ -7,11 +7,11 @@ export type BurgerMenuProps = JSX.IntrinsicElements["button"] &
   }>;
 
 export const BurgerMenu: React.FC<BurgerMenuProps> = ({
-  as: Component = "button",
+  as: Component = "div",
   ...rest
 }) => {
   return (
-    <Component className="btn btn-square btn-ghost" {...rest}>
+    <Component className="btn btn-ghost w-full " {...rest}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -23,7 +23,7 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({
           strokeLinejoin="round"
           strokeWidth="2"
           d="M4 6h16M4 12h16M4 18h16"
-         />
+        />
       </svg>
     </Component>
   );

@@ -5,21 +5,29 @@ export type TableProps = JSX.IntrinsicElements["table"] &
   PropsWithChildren<{
     columns: string[];
     rows: { title: string; link?: string }[][];
+    pageNumber: number;
+    containerClassName?: string;
     className?: string;
   }>;
 
 export const Table: React.FC<TableProps> = ({
   columns,
   rows,
+  containerClassName,
   className,
+  pageNumber,
   ...rest
 }) => {
   return (
-    <div className="overflow-x-auto">
-      <table className={twMerge("table table-xs", className)} {...rest}>
+    <div
+      className={twMerge(
+        "overflow-x-auto w-full flex flex-row justify-center p-4",
+        containerClassName
+      )}
+    >
+      <table className={twMerge("table table-zebra", className)} {...rest}>
         <thead>
           <tr>
-            <th />
             {columns.map((value, index) => (
               <th key={index}>{value}</th>
             ))}
@@ -28,7 +36,6 @@ export const Table: React.FC<TableProps> = ({
         <tbody>
           {rows.map((row, index) => (
             <tr key={index}>
-              <th>{index}</th>
               {row.map((entry, idx) =>
                 entry.link ? (
                   <td key={idx}>

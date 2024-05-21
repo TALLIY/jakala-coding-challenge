@@ -6,3 +6,5 @@ export enum PagesEnum {
   SPECIES = "/species",
   PLANETS = "/planets",
 }
+
+export const DEFAULT_PAGE: PagesEnum = PagesEnum.FILMS;

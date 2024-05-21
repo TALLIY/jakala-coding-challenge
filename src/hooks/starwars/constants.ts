@@ -12,7 +12,6 @@ enum RelevantFilmDataEnum {
 enum RelevantPeopleDataEnum {
   NAME = "name",
   HEIGHT = "height",
-  HOMEWORLD = "homeworld",
   BIRTH_YEAR = "birth_year",
 }
 
@@ -21,14 +20,12 @@ enum RelevantPlanetDataEnum {
   POPULATION = "population",
   GRAVITY = "gravity",
   CLIMATE = "climate",
-  TERRAIN = "terain",
 }
 
 enum RelevantSpeciesDataEnum {
   NAME = "name",
   AVERAGE_HEIGHT = "average_height",
   AVERAGE_LIFESPAN = "average_lifespan",
-  HOMEWORLD = "homeworld",
 }
 
 enum RelevantStarshipDataEnum {

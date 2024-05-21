@@ -15,10 +15,10 @@ i18n
     ns: ["translations"],
     defaultNS: "translations",
     fallbackLng: "en",
-    debug: true,
     interpolation: {
       escapeValue: false,
     },
   });
 
+// eslint-disable-next-line import/no-default-export
 export default i18n;

@@ -10,13 +10,13 @@ import { Vehicles } from "../routes/vehicles.tsx";
 export const pages: {
   [page in PagesEnum]: Route;
 } = {
-  [PagesEnum.PEOPLE]: {
-    pageTitle: "pages.titles.people",
-    element: <People />,
-  },
   [PagesEnum.FILMS]: {
     pageTitle: "pages.titles.films",
     element: <Films />,
+  },
+  [PagesEnum.PEOPLE]: {
+    pageTitle: "pages.titles.people",
+    element: <People />,
   },
   [PagesEnum.STARSHIPS]: {
     pageTitle: "pages.titles.starships",
