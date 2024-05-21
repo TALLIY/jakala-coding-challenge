@@ -1,4 +1,4 @@
-export enum pagesEnum {
+export enum PagesEnum {
   PEOPLE = "/people",
   FILMS = "/films",
   STARSHIPS = "/starships",

@@ -1,0 +1,12 @@
+{
+  "pages": {
+    "titles": {
+      "people": "people",
+      "films": "films",
+      "starships": "starships",
+      "vehicles": "vehicles",
+      "species": "species",
+      "planets": "planets"
+    }
+  }
+}

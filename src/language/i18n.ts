@@ -10,15 +10,13 @@ i18n
   .use(initReactI18next)
   .init({
     supportedLngs: suppotedLanguages,
+    load: "all",
     ns: ["translations"],
     defaultNS: "translations",
     fallbackLng: "en",
     debug: true,
     interpolation: {
       escapeValue: false,
-    },
-    backend: {
-      loadPath: "/translations/{{lng}}.json?v=4",
     },
   });
 
