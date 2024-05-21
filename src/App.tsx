@@ -1,7 +1,7 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Outlet } from "react-router-dom";
 
-function App() {
+const App: React.FC = () => {
   const queryClient = new QueryClient();
 
   return (
@@ -9,6 +9,6 @@ function App() {
       <Outlet />
     </QueryClientProvider>
   );
-}
+};
 
 export default App;

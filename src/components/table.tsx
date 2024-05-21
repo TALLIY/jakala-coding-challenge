@@ -19,25 +19,25 @@ export const Table: React.FC<TableProps> = ({
       <table className={twMerge("table table-xs", className)} {...rest}>
         <thead>
           <tr>
-            <th></th>
-            {columns.map((value) => (
-              <th>{value}</th>
+            <th />
+            {columns.map((value, index) => (
+              <th key={index}>{value}</th>
             ))}
           </tr>
         </thead>
         <tbody>
-          {rows.map((row, idx) => (
-            <tr>
-              <th>{idx}</th>
-              {row.map((entry) =>
+          {rows.map((row, index) => (
+            <tr key={index}>
+              <th>{index}</th>
+              {row.map((entry, idx) =>
                 entry.link ? (
-                  <td>
+                  <td key={idx}>
                     <a className="link" href={entry.link}>
                       {entry.title}
                     </a>
                   </td>
                 ) : (
-                  <td>{entry.title}</td>
+                  <td key={idx}>{entry.title}</td>
                 )
               )}
             </tr>

@@ -1,7 +1,8 @@
-import { useTranslation } from "react-i18next";
-import { LanguageEnum } from "../../../model/languages/languages";
 import { useMemo } from "react";
+import { useTranslation } from "react-i18next";
 import { useSearchParams } from "react-router-dom";
+
+import { LanguageEnum } from "../../../model/languages/languages";
 
 export const useAppLanguage = (): LanguageEnum => {
   const [searchParams] = useSearchParams();

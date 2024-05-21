@@ -1,3 +1,4 @@
+import { Route } from "./types.ts";
 import { PagesEnum } from "../../model/pages/pages.ts";
 import { Films } from "../routes/films.tsx";
 import { People } from "../routes/people.tsx";
@@ -5,7 +6,6 @@ import { Planets } from "../routes/planets.tsx";
 import { Species } from "../routes/species.tsx";
 import { Starships } from "../routes/starships.tsx";
 import { Vehicles } from "../routes/vehicles.tsx";
-import { Route } from "./types.ts";
 
 export const pages: {
   [page in PagesEnum]: Route;
